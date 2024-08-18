@@ -1,5 +1,4 @@
-*.rpm
-src/
-pkg/
-*.pkg.*
-*.log
+*
+!PKGBUILD
+!.SRCINFO
+!.gitignore
