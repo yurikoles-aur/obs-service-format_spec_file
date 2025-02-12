@@ -8,7 +8,7 @@
 _servicename=format_spec_file
 pkgname=obs-service-"${_servicename}"
 _pkgver=20240121
-_subpkgver=1.3
+_subpkgver=1.4
 pkgver="${_pkgver}.${_subpkgver}"
 _susepkgver="${_pkgver}-${_subpkgver}"
 pkgrel=1
@@ -18,7 +18,7 @@ url='https://github.com/openSUSE/obs-service-format_spec_file'
 license=('GPL-2.0-only')
 depends=('obs-service-source_validator')
 source=("https://download.opensuse.org/source/tumbleweed/repo/oss/src/${pkgname}-${_susepkgver}.src.rpm")
-sha256sums=('934c698740a17a0d1362100d1041ea6d69e4fa9543e9185bfc26b5b39767be38')
+sha256sums=('0cd187c21693f6d3b4031bbaab901cc6823d7a4fa3b102124f6364c2a0def64f')
 
 prepare() {
   bsdtar -xf "${pkgname}-${_pkgver}.tar.bz2"
