@@ -7,18 +7,18 @@
 
 _servicename=format_spec_file
 pkgname=obs-service-"${_servicename}"
-_pkgver=20240121
-_subpkgver=1.5
+_pkgver=20260320
+_subpkgver=2.2
 pkgver="${_pkgver}.${_subpkgver}"
 _susepkgver="${_pkgver}-${_subpkgver}"
-pkgrel=2
+pkgrel=1
 pkgdesc='An OBS source service: reformats a spec file to SUSE standard'
 arch=('any')
 url='https://github.com/openSUSE/obs-service-format_spec_file'
 license=('GPL-2.0-only')
 depends=('obs-service-source_validator')
 source=("https://download.opensuse.org/source/tumbleweed/repo/oss/src/${pkgname}-${_susepkgver}.src.rpm")
-sha256sums=('bc7015aa343d90cea58b9302341ad2b6da42de631c6388c4b899f6aa12e268cc')
+sha256sums=('84b9aa6acc4d5190083f32c4feb815c85a1052e02de78cb83c137090704148db')
 
 prepare() {
   bsdtar -xf "${pkgname}-${_pkgver}.tar.bz2"
